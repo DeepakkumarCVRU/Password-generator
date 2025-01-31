@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- main div container -->
+  <div class="container">
+    <h1>password generator</h1>
+
+    <!-- this input box for display password -->
+    <div class="input">
+      <input type="text" class="passbox" id="passbox" disabled>
+      <button id="copy-button" onclick=copybutton()>copy</button>
+    </div>
+
+    <!-- password range box  -->
+    <div class="range-box">
+      <input type="range" min="4" max="20" id="inputslider">
+      <span id="slidervalue"></span>
+    </div>
+
+    <!-- these are option  -->
+
+    <div id="options">
+      <div class="row">
+        <label for="lowercase"> lowercase letter (a-z)</label>
+        <input type="checkbox" name="lowercase" id="lowercase" checked>
+      </div>
+
+      <div class="row">
+        <label for="Uppercase"> Uppercase letter (A-Z)</label>
+        <input type="checkbox" name="Uppercase" id="uppercase" checked>
+      </div>
+
+      <div class="row">
+        <label for="numbers">include number (0-9)</label>
+        <input type="checkbox" name="numbers" id="numbers" checked>
+      </div>
+
+      <div class="row">
+        <label for="symbols">include symbols (!-*)</label>
+        <input type="checkbox" name="symbols" id="symbols" checked>
+      </div>
+    </div>
+
+    <!-- this is a button for generate password -->
+    <button class="genbtns" id="genbtn">generate password</button>
+  </div>
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

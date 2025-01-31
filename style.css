@@ -99,3 +99,14 @@ body{
   cursor: pointer;
   text-align: center;
 }
+
+@media screen and (max-width:410px) {
+  #options{
+    grid-template-columns: 1fr;
+    font-size: larger;
+  }
+
+  .container{
+    height: 450px;
+  }
+}
